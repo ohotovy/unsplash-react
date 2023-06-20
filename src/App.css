@@ -1,0 +1,138 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+li{
+  list-style: none;
+}
+
+.image{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.preload {
+  width: 60px;
+  height: 60px;
+  border: 8px solid #ffffff;
+  border-top: 8px solid hsla(160, 100%, 37%, 1);
+  border-radius: 50%;
+  animation: spin 0.7s ease-in-out infinite;
+  margin: 50px auto;
+  backdrop-filter: blur(100px);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.imageLink{
+  height: 90%;
+  cursor: pointer;
+}
+
+.imageInfo{
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  color: white;
+  display: none;
+  transition: all 0.5 ease-in-out;
+  
+  
+  
+}
+.imageInfo a {
+  text-decoration: none;
+  color: white;
+
+}
+.imageStats{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bi.bi-heart{
+  transform: scale(1.1);
+  transform: translateY(1px);
+}
+
+.image:hover .imageInfo{
+  display: flex;
+  transition: all 0.5 ease-in-out;
+
+}
+
+.imageContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+}
+.imageContainer img{
+  max-height: 80vh;
+}
+
+#nav{
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-decoration: none;
+}
